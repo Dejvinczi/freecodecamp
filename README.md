@@ -46,7 +46,7 @@ The main goals of this repository are to:
 
 ## 🏆 Completed Courses and Certificates
 
-- [/] Responsive Web Design
+- [ ] Responsive Web Design
 - [ ] JavaScript Algorithms and Data Structures
 - [ ] Front End Development Libraries
 - [ ] ...
