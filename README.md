@@ -66,7 +66,7 @@ Technologies used in the projects:
 
 ## 📝 License
 
-This project is licensed under the [MIT](LICENSE) license.
+This project is licensed under the MIT license.
 
 ## ✍️ Author
 
