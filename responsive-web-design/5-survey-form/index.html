@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="survey">
+      <div class="survey-head">
+        <h1 id="title" class="survey-title">My survey</h1>
+        <p id="description" class="survey-description">Sample descirption of my survey</p>
+      </div>
+      <form id="survey-form" class="survey-body">
+        <div class="question">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name.." required />
+        </div>
+        <div class="question">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email.." required />
+        </div>
+        <div class="question">
+          <label id="number-label" for="age">Age</label>
+          <input id="number" name="number" type="number" min="16" max="100" placeholder="Your age.." />
+        </div>
+        <div class="question">
+          <label id="dropdown-label" for="dropdown">Choose one option from dropdown</label>
+          <select id="dropdown" name="dropdown">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+          </select>
+        </div>
+        <div class="question">
+          <label id="radio-label">Do you like this survey?</label>
+          <label id="radio-one-label" for="radio-one">
+            <input id="radio-one" type="radio" name="radio" value="true" checked /> Yes
+          </label>
+          <label id="radio-two-label" for="radio-two">
+            <input id="radio-two" type="radio" name="radio" value="false" /> No
+          </label>
+        </div>
+        <div class="question">
+          <label id="checkbox-label"> Choose more than one option:</label>
+          <label id="checkbox-one-label" for="checkbox-one">
+            <input id="checkbox-one" type="checkbox" name="checkbox" value="1" /> Option 1
+          </label>
+          <label id="checkbox-two-label" for="checkbox-two">
+            <input id="checkbox-two" type="checkbox" name="checkbox" value="2" /> Option 2
+          </label>
+          <label id="checkbox-three-label" for="checkbox-three">
+            <input id="checkbox-three" type="checkbox" name="checkbox" value="3" /> Option 3
+          </label>
+          <label id="checkbox-four-label" for="checkbox-four">
+            <input id="checkbox-four" type="checkbox" name="checkbox" value="4" /> Option 4
+          </label>
+          <label id="checkbox-five-label" for="checkbox-five">
+            <input id="checkbox-five" type="checkbox" name="checkbox" value="5" /> Option 5
+          </label>
+        </div>
+        <div class="question">
+          <label id="textarea-label" for="textarea"> Provide your opinion about survey </label>
+          <textarea id="textarea" name="textarea" placeholder="Your opinion.."></textarea>
+        </div>
+        <div class="submit-survey">
+          <input id="submit" type="submit" class="submit-button" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
