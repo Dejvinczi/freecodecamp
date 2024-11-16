@@ -1,0 +1,120 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+a {
+  color: rgb(22, 93, 117);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 20px 10px;
+  background-color: rgba(240, 240, 240);
+  border-radius: 5px;
+}
+
+#title {
+  padding: 20px;
+}
+
+#title h1 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 2rem;
+}
+
+#title p {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#img-div {
+  max-width: 700px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+#img-caption {
+  font-size: 0.7rem;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-style: italic;
+}
+
+#tribute-info {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+#tribute-info h2 {
+  text-align: center;
+}
+
+#tribute-info > ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#tribute-info > ul > li {
+  margin: 20px 0;
+  position: relative;
+  padding-left: 15px;
+}
+
+#tribute-info > ul > li:before {
+  content: "•";
+  position: absolute;
+  left: -5px;
+}
+
+.timeline {
+  font-size: 0.8rem;
+}
+
+#quote {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#sign {
+  margin: 20px;
+  text-align: right;
+}
+
+#footer {
+  display: block;
+  text-align: center;
+  max-width: 700px;
+  padding: 10px;
+  margin: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
