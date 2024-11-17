@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>Python Documentation</h1></header>
+      <div class="divider"></div>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <div class="divider"></div>
+      <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+      <div class="divider"></div>
+      <a class="nav-link" href="#Python_vs_Other_Languages">Python vs Other Languages</a>
+      <div class="divider"></div>
+      <a class="nav-link" href="#Core_Concepts">Core Concepts</a>
+      <div class="divider"></div>
+      <a class="nav-link" href="#Exception_Handling">Exception Handling</a>
+      <div class="divider"></div>
+      <a class="nav-link" href="#Best_Practices">Best Practices</a>
+      <div class="divider"></div>
+      <a class="nav-link" href="#Development_Environment">Development Environment</a>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header><h2>Introduction</h2></header>
+        <p>
+          Python is a high-level, interpreted programming language with a focus on readability and simplicity. It
+          supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+          Python's design philosophy emphasizes code readability with the use of significant indentation.
+        </p>
+        <p>
+          Python comes with a comprehensive standard library and robust ecosystem of third-party packages. In various
+          environments, Python can be used to:
+        </p>
+        <ul>
+          <li>Create web applications using frameworks like Django or Flask</li>
+          <li>Develop desktop applications with libraries like PyQt or Tkinter</li>
+          <li>Perform data analysis and machine learning using libraries like NumPy, Pandas, and scikit-learn</li>
+          <li>Automate system administration tasks and create scripts</li>
+        </ul>
+      </section>
+
+      <section id="What_you_should_already_know" class="main-section">
+        <header><h2>What you should already know</h2></header>
+        <p>This guide assumes you have the following basic background:</p>
+        <ul>
+          <li>Basic understanding of computer programming concepts</li>
+          <li>Familiarity with command-line interfaces</li>
+          <li>Basic knowledge of text editors or integrated development environments (IDEs)</li>
+        </ul>
+      </section>
+
+      <section id="Python_vs_Other_Languages" class="main-section">
+        <header><h2>Python vs Other Languages</h2></header>
+        <p>
+          Python differs from other programming languages in several key aspects. Unlike languages such as C++ or Java,
+          Python:
+        </p>
+        <ul>
+          <li>Uses indentation for code blocks instead of curly braces</li>
+          <li>Is dynamically typed, meaning you don't need to declare variable types</li>
+          <li>Follows a "batteries included" philosophy with its comprehensive standard library</li>
+          <li>Emphasizes readability and simplicity over performance</li>
+        </ul>
+      </section>
+
+      <section id="Core_Concepts" class="main-section">
+        <header><h2>Core Concepts</h2></header>
+        <section class="sub-section">
+          <h3>Variables and Datta Types</h3>
+          <p>Python is dynamically typed and supports several built-in data types:</p>
+          <ul>
+            <li>Numeric Types (int, float, complex)</li>
+            <li>Sequence Types (list, tuple, range)</li>
+            <li>Text Type (str)</li>
+            <li>Mapping Type (dict)</li>
+            <li>Set Types (set, frozenset)</li>
+            <li>Boolean Type (bool)</li>
+            <li>None Type (None)</li>
+          </ul>
+          <p>Variables are created the moment you first assign a value to them:</p>
+          <pre>
+<code>x = <span style="color: #b5cea8">5</span>           <span class="comment"># Integer</span>
+name = <span style="color: #ce9178">"John"</span>   <span class="comment"># String</span>
+numbers = []    <span class="comment"># List</span>
+is_valid = <span style="color: #569cd6">True</span> <span class="comment"># Boolean</span></code></pre>
+        </section>
+        <section class="sub-section">
+          <h3>Control Structures</h3>
+          <p>Python provides standard control structures found in most programming languages:</p>
+          <ul>
+            <li>if/elif/else statements for conditional execution</li>
+            <li>for and while loops for iteration</li>
+            <li>try/except blocks for error handling</li>
+          </ul>
+          <pre>
+<code><span class="keyword">if</span> condition:
+    <span class="function">do_something()</span>
+<span class="keyword">elif</span> other_condition:
+    <span class="function">do_something()</span>
+<span class="keyword">else</span>:
+    <span class="function">default_action()</span></code></pre>
+        </section>
+
+        <section class="sub-section">
+          <h3>Functions</h3>
+          <p>Functions in Python are defined using the `def` keyword and can include optional type hints:</p>
+          <pre><code><span class="keyword">def</span> <span class="function">greet</span>(name: <span class="type">str</span>) -> <span class="type">str</span>:
+      <span class="string">"""
+      Return a personalized greeting message.
+
+      Args:
+          name: The name of the person to greet
+
+      Returns:
+          A greeting string
+      """</span>
+      <span class="keyword">return</span> <span class="string">f"Hello, {name}!"</span></code></pre>
+        </section>
+
+        <section class="sub-section">
+          <h3>Object-Oriented Programming</h3>
+          <p>Python supports object-oriented programming with classes and inheritance:</p>
+          <pre>
+<code><span class="keyword">class</span> <span class="type">Animal</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self, name):
+        self.name = name
+
+    <span class="keyword">def</span> <span class="function">speak</span>(self):
+        <span class="keyword">pass</span>
+
+<span class="keyword">class</span> <span class="type">Dog</span>(<span class="type">Animal</span>):
+    <span class="keyword">def</span> <span class="function">speak</span>(self):
+      <span class="keyword">return</span> <span class="string">f"{self.name} says Woof!"</span></code></pre>
+        </section>
+
+        <section class="sub-section">
+          <h3>Modules and Packages</h3>
+          <p>Python code can be organized into:</p>
+          <ul>
+            <li>Modules: Single files containing Python code</li>
+            <li>Packages: Directories containing multiple modules</li>
+            <li>Libraries: Collections of packages</li>
+          </ul>
+          <p>Import syntax:</p>
+          <pre><code><span class="keyword">import</span> module_name
+<span class="keyword">from</span> module_name <span class="keyword">import</span> specific_item
+<span class="keyword">from</span> package_name <span class="keyword">import</span> module_name</code></pre>
+        </section>
+      </section>
+
+      <section id="Exception_Handling" class="main-section">
+        <header><h2>Exception Handling</h2></header>
+        <p>
+          Python provides robust error handling mechanisms through try/except blocks. Exception handling helps manage
+          errors and unexpected situations in your code:
+        </p>
+        <pre><code><span class="keyword">try</span>:
+    number = <span class="function">int</span>(<span class="function">input</span>(<span class="string">"Enter a number: "</span>))
+    result = 10 / number
+<span class="keyword">except</span> ValueError:
+    <span class="function">print</span>(<span class="string">"Please enter a valid number"</span>)
+<span class="keyword">except</span> ZeroDivisionError:
+    <span class="function">print</span>(<span class="string">"Cannot divide by zero"</span>)
+<span class="keyword">except</span> Exception <span class="keyword">as</span> e:
+    <span class="function">print</span>(<span class="string">f"An unexpected error occurred: {e}"</span>)
+<span class="keyword">else</span>:
+    <span class="function">print</span>(<span class="string">f"Result: {result}"</span>)
+<span class="keyword">finally</span>:
+    <span class="function">print</span>(<span class="string">"Operation completed"</span>)</code></pre>
+      </section>
+
+      <section id="Best_Practices" class="main-section">
+        <header><h2>Best Practices</h2></header>
+        <p>When writing Python code, follow these guidelines:</p>
+        <ol>
+          <li>Follow PEP 8 style guide</li>
+          <li>Write docstrings for functions and classes</li>
+          <li>Use meaningful variable and function names</li>
+          <li>Handle exceptions appropriately</li>
+          <li>Write unit tests for your code</li>
+        </ol>
+      </section>
+
+      <section id="Development_Environment" class="main-section">
+        <header><h2>Development Environment</h2></header>
+        <p>To start developing with Python, you need:</p>
+        <ul>
+          <li>Python interpreter (latest stable version recommended)</li>
+          <li>A text editor or IDE (PyCharm, VS Code, or Sublime Text)</li>
+          <li>Package manager (pip)</li>
+          <li>Virtual environment tool (venv or conda)</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
