@@ -33,36 +33,37 @@ The main goals of this repository are to:
 
 ```
 ├── responsive-web-design/
-│   ├── 1-project1/
-│   ├── 2-project2/
+│   ├── 01-project1/
+│   ├── 02-project2/
 │   └── ...
-├── javascript-algorithms/
-│   ├── 1-challange1/
-│   ├── 2-challange2/
+├── javascript-algorithms-and-data-structures/
+│   ├── 01-challange1/
+│   ├── 02-challange2/
 │   └── ...
-├── front-end-libraries/
+├── front-end-development-and-apis/
 └── ...
 ```
 
 ## 🏆 Completed Courses and Certificates
 
-- [ ] Responsive Web Design
+- [x] Responsive Web Design
 - [ ] JavaScript Algorithms and Data Structures
 - [ ] Front End Development Libraries
 - [ ] ...
 
 ## 💻 Technologies
 
-Technologies used in the projects:
+Technologies currently used in the projects:
 
 - HTML5
+- CSS
 - ...
 
 ## 🌐 Links
 
 - [My freeCodeCamp Profile](https://www.freecodecamp.org/dejvinczi)
-- [Portfolio](your_portfolio_link)
-- [LinkedIn](your_linkedin_link)
+- [Portfolio](https://github.com/dejvinczi)
+- [LinkedIn](https://www.linkedin.com/in/dawid-gurgul/)
 
 ## 📝 License
 
