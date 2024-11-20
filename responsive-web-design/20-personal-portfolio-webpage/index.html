@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <a id="profile-link" class="logo-link" href="#main" target="_blank">dawid.dev</a>
+      </div>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#welcome-section">Home</a></li>
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#projects">Projects</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile-links">
+        <a class="profile-link" href="https://github.com" target="_blank">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a class="profile-link" href="https://www.linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="welcome-section">
+        <h1>Hello, I'm David</h1>
+        <p class="subtitle">Full Stack Developer</p>
+        <div class="cta-buttons">
+          <a href="#projects" class="cta-btn">View My Work</a>
+          <a href="#contact" class="cta-btn secondary">Contact Me</a>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I'm a passionate Full Stack Developer with expertise in modern web technologies.</p>
+            <div class="skills">
+              <div class="skill-category">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, React, Vue.js</p>
+              </div>
+              <div class="skill-category">
+                <h3>Backend</h3>
+                <p>Node.js, Python, PHP, SQL</p>
+              </div>
+              <div class="skill-category">
+                <h3>Tools</h3>
+                <p>Git, Docker, AWS, Firebase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="/api/placeholder/400/300" alt="Project 1" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-commerce Platform</h3>
+              <p class="project-description">Full-stack e-commerce solution with React and Node.js</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link" target="_blank"> <i class="fab fa-github"></i> Source Code </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="/api/placeholder/400/300" alt="Project 2" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-description">Real-time task management with Vue.js and Firebase</p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link" target="_blank"> <i class="fab fa-github"></i> Source Code </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-image">
+              <img src="/api/placeholder/400/300" alt="Project 3" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Dashboard</h3>
+              <p class="project-description">Weather forecast app with OpenWeather API</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a href="#" class="project-link" target="_blank"> <i class="fab fa-github"></i> Source Code </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-description">
+          Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+        </p>
+        <div class="contact-content">
+          <a href="mailto:email@example.com" class="contact-button"> <i class="fas fa-envelope"></i> Email Me </a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Dawid Gurgul. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
