@@ -9,15 +9,25 @@ export default function Main() {
    * we're building up to learning the right way 🙂
    */
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    const newIngredient = formData.get("ingredient");
+
+    ingredients.push(newIngredient);
+    console.log(ingredients);
+  };
+
   return (
     <main>
-      <form className="add-ingredient-form">
-        <input type="text" placeholder="e.g. oregano" aria-label="Add ingredient" />
+      <form onSubmit={(e) => onSubmit(e)} className="add-ingredient-form">
+        <input type="text" name="ingredient" placeholder="e.g. oregano" aria-label="Add ingredient" />
         <button>Add ingredient</button>
       </form>
       <ul>
         {ingredients.map((ingredient, index) => {
-          return <li id={`ingredient-${index}`}>{ingredient}</li>;
+          return <li key={`ingredient-${index}`}>{ingredient}</li>;
         })}
       </ul>
     </main>
