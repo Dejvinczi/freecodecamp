@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function App() {
-  const [isGoingOut, setIsGoingOut] = React.useState();
+  const [isGoingOut, setIsGoingOut] = React.useState(false);
 
   const toggleIsGoingOut = (e) => {
     setIsGoingOut((prevState) => !prevState);
