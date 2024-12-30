@@ -48,7 +48,7 @@ The main goals of this repository are to:
 
 - [x] Responsive Web Design
 - [ ] JavaScript Algorithms and Data Structures
-- [ ] Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects (FreeCodeCamp YT x Scrimba)
+- [x] Learn React JS - Full Beginner’s Tutorial (2024) & Practice Projects (FreeCodeCamp YT x Scrimba)
 - [ ] ...
 
 ## 💻 Technologies
